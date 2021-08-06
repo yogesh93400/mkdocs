@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    registry = "anishnath/mkdocs"
-    registryCredential = 'docker-creds'
+    registry = "yogesh93/calculatorproject"
+    registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/anishnath/mkdocs.git'
+        git 'https://github.com/yogesh93400/mkdocs'
       }
     }
     stage('Building image') {
