@@ -43,7 +43,7 @@ FROM tomcat:latest
 
 LABEL maintainer="Nidhi Gupta"
 
-# ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
+ADD C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Yogesh\CalculatorProject\target
 
 EXPOSE 8080
 
