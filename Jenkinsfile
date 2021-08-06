@@ -6,11 +6,11 @@ pipeline {
   }
   agent any
   stages {
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/yogesh93400/mkdocs'
-      }
-    }
+ stage('Clone'){
+            steps{
+                git credentialsId: '827d70de-0110-405c-9038-5aaf04b08095', url: 'https://git.nagarro.com/freshertraining2021/yogeshyadav01.git'
+            }
+        }
     stage('Building image') {
       steps{
         script {
