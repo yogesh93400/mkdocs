@@ -43,8 +43,8 @@ FROM tomcat:latest
 
 LABEL maintainer="Nidhi Gupta"
 
-ADD C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Yogesh\CalculatorProject\target  yogesh93/calculatorproject
+ADD C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Yogesh\CalculatorProject\target  
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD ["catalina.sh", "run"]
