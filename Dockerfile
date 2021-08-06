@@ -43,7 +43,7 @@ FROM tomcat:latest
 
 LABEL maintainer="Nidhi Gupta"
 
-ADD C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Yogesh\CalculatorProject\target
+ADD C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Yogesh\CalculatorProject\target  yogesh93/calculatorproject
 
 EXPOSE 8080
 
